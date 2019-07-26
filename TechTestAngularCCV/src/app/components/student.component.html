@@ -1,0 +1,88 @@
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <input
+      type="hidden"
+      name="id"
+      #id="ngModel"
+      [(ngModel)]="service.formData.id"
+    />
+    <div class="form-group">
+      <label>Student</label>
+      <input
+        name="Student"
+        #Student="ngModel"
+        [(ngModel)]="service.formData.Student"
+        class="form-control"
+        required
+      />
+      <div class="validation-error" *ngIf="Student.invalid && Student.touched">
+        This field is required..
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+          <label>Language & Arts</label>
+          <input
+            type = "number"
+            name="LnA"
+            #LnA="ngModel"
+            [(ngModel)]="service.formData.LnA"
+            class="form-control"
+            required
+          />
+          <div class="validation-error" *ngIf="LnA.invalid && LnA.touched">
+            This field is required..
+          </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Science</label>
+        <input
+          type = "number"
+          name="Science"
+          #Science="ngModel"
+          [(ngModel)]="service.formData.Science"
+          class="form-control"
+          required
+        />
+        <div class="validation-error" *ngIf="Science.invalid && Science.touched">
+          This field is required..
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Social Studies</label>
+        <input
+          type = "number"
+          name="SocialStds"
+          #SocialStds="ngModel"
+          [(ngModel)]="service.formData.SocialStds"
+          class="form-control"
+          required
+        />
+        <div class="validation-error" *ngIf="SocialStds.invalid && SocialStds.touched">
+          This field is required..
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Math</label>
+        <input
+          type = "number"
+          name="Math"
+          #Math="ngModel"
+          [(ngModel)]="service.formData.Math"
+          class="form-control"
+          required
+        />
+        <div class="validation-error" *ngIf="Math.invalid && Math.touched">
+          This field is required..
+        </div>
+      </div>
+      <button
+        class="btn btn-primary"
+        type="submit"
+        [disabled]="form.invalid"
+        class="btn btn-primary btn-block"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+  
