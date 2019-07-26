@@ -1,0 +1,52 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "Student": "Anna Taylor",
+      "LnA": 90,
+      "Science": 85,
+      "SocialStds": 86,
+      "Math": 89
+    },
+    {
+      "id": 2,
+      "Student": "Mark Smith",
+      "LnA": 82,
+      "Science": 75,
+      "SocialStds": 89,
+      "Math": 86
+    },
+    {
+      "id": 3,
+      "Student": "John Doe",
+      "LnA": 89,
+      "Science": 76,
+      "SocialStds": 94,
+      "Math": 82
+    },
+    {
+      "id": 4,
+      "Student": "Jack Jones",
+      "LnA": 93,
+      "Science": 73,
+      "SocialStds": 97,
+      "Math": 90
+    },
+    {
+      "id": 5,
+      "Student": "Melody Queens",
+      "LnA": 87,
+      "Science": 89,
+      "SocialStds": 80,
+      "Math": 83
+    },
+    {
+      "id": 6,
+      "Student": "Noah Menac",
+      "LnA": 86,
+      "Science": 90,
+      "SocialStds": 83,
+      "Math": 85
+    }
+  ]
+}
